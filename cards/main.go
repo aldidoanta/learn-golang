@@ -3,10 +3,8 @@ package main
 var a = 1
 
 func main() {
-	cards := deck{"wildcard", newCard()}
-	cards = append(cards, newCard())
-
-	// card := newCard()
+	cards := newDeck()
+	cards.shuffle()
 	cards.print()
 }
 
